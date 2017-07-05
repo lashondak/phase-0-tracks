@@ -1,6 +1,6 @@
 # Git Definitions
 
-#Hi Tyler! I'm on a mission to get caught up!
+#Hi Tyler! I'm on a mission to get caught up! :) Fixing my mistake!
 
 **Instructions: ** Define each of the following Git concepts.
 
