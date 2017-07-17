@@ -1,17 +1,28 @@
-
-body {font-size: 100%;}
-.sidebar {background: red;}
-.flowers {font-size:2em;
-          color: white;
-          min-height:50%;
-          background: url('images/flower-big.jpg');
-          background-repeat:no-repeat;}
-
-
-@media  (max-width: 800px ){
-.sidebar{display:none;}
-.flowers{background: url('images/flower-small.jpg');
-         background-repeat:no-repeat;}
+section#contact-info {
+  font-size: 0.8em;
+  margin-top: 0;
 }
 
+section.job {
+  background-color: #e9e5dc;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
+ul.list-font-size {
+  font-size: .8em;
+}
+
+section.job::after {
+content: "Look I had a job!";
+color: green;
+}
+
+p::first-letter {
+  color: red;
+}
+
+h2 + p {
+  background-color: pink;
+}
