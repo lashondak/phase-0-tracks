@@ -1,14 +1,33 @@
-#hat {
-
-}
-
-#glasses {
-
+body {
+  width: 40%;
+  margin: auto;
+  display: block;
 }
 
 #octopus {
-margin: 0 auto
-
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-right: -50%
+  z-index: 1;  
 }
 
+#glasses {
+  margin: auto;
+  display: block;
+  position: fixed;
+  top: 29%;
+  left: 55%;
+  z-index: 2;
+}
 
+#hat {
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 48%;
+  z-index: 3;
+}
