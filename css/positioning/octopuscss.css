@@ -1,0 +1,32 @@
+body {
+  width: 40%;
+  margin: auto;
+  display: block;
+}
+
+#octopus {
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-right: -50%
+  z-index: 1;  
+}
+
+#glasses {
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 29%;
+  left: 55%;
+  z-index: 2;
+}
+
+#hat {
+  position: absolute;
+  top: 5%;
+  left: 48%;
+  z-index: 3;
+}
+
