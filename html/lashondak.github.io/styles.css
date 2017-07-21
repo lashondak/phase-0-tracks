@@ -1,0 +1,37 @@
+
+#services {
+	font: bold;
+	border: solid;
+	border-color: black;
+	border-width: thin;
+	padding: 5px;
+	background-image: url(women-dryer.jpg);
+	opacity: 0.7;
+}
+
+#contact {
+	margin:20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.paragraph {
+	font-family: "Helvetica", sans-serif; 
+}
+
+footer {
+	text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    color: purple;
+    font-size: smaller;
+  }
+}
+
+<a: visited {
+	color=green;
+}
