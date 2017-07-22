@@ -1,0 +1,36 @@
+Algorithm for Using an Elevator
+#Robot has been placed in front of the elevator in the middle of it's doors "Hoe"
+-Move to the right 24" and reach forward until you feel two circular buttons, one on top of the other.
+-Push the top circular button. Check to ensure light has illuminated
+-Return to home position and wait for ding sound and doors to open.
+-Once doors open, wait 2 seconds then move forward 24".
+-Turn around 180 degrees, then move 18" to the right.
+-Ask one elevator passenger what floor they would like. 
+    -Buttons are circular in two columns with ten rows. Column one is floor 1-10, with one being at index 1,1 and 10 being at 1,10. Floors 11-20 are on the right side at with 11 at index 2,1 and floor 20 at 2,10.  
+-Press the button based on passenger preference.
+-Move backwards 12" and wait until the elevator stops.
+-When you hear the ding sound and the doors open, wait 2 seconds, move left 24" and move forward 36" to exit the elevator.
+
+Algorithm for combing my hair into a mohawk.
+-Gather all needed hair supplies from bathroom.
+    -Bobby pins, rubber bands, duckbill clips, rat tail comb, firm brush, paddle brush, gel, pommade
+-Stand in front of mirror with all supplies within arms reach.
+-(Sectioning) Use your rat tail comb to separate your hair into four equal sections or quadrants and push hair in the direction of its section.
+-(Securing Sections) Once hair is sectioned, secure each section by following the directions below:
+    -Begin at left/front section, then twist the hair and use one duckbill clip to secure the section. (front, left) 
+    -Move to the right and repeat the same procedure. (front, right)
+    -Move backwards (back, right) and complete the same procedure.
+    -Move to the left (back,left) and complete the same procedure.
+-(Detangling) Beginning in the (front, left) use your paddle brush to detangle your hair by brushing it from the middle to end, then 3/4 up to end, then from scalp to end. Then resecure it using the same procedure as above (Securing Sections). 
+    -Move to the right and repeat the same procedure. (front, right)
+    -Move backwards (back, right) and complete the same procedure.
+    -Move to the left (back,left) and complete the same procedure.
+-(Pompodore section)- In the front of your hair, loosen the first two sections in the front.
+    -Using your rat tail comb, create two equal quarter circles beginning at your temple and ending 4 inches down the center part. Do this on the left and right sides. Secure the area.
+-(Mohawk section)- Divide remaining hair into three even horizontal sections. c
+    -Loosely secure each section.
+    -(Grab a rubber band) starting at the bottom section, create a ponytail by pull hair tightly and wrapping rubber band tightly around it.
+    -Repeat this in middle section.
+    -Repeat this in top section.
+    -Pull loose hair into desired style.
+-(Pompodore section)- make a small ponytail 4 inches from scalp. Use bobby pin to put the part near the rubberband down. Pull and puff the pompdore as desired.
