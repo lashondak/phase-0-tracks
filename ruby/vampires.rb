@@ -3,7 +3,7 @@ puts
 
 #collecting user data
 puts "What is your name?"
-	  employee_name = gets.chomp
+    employee_name = gets.chomp
 puts
 
 #determining how many employees need to be processed so that I can set up an iterative loop.
@@ -25,33 +25,35 @@ puts "How old are you?"
 puts
 
 puts "What year were you born in?"
-	  employee_birth_year = gets.chomp.to_i
+    employee_birth_year = gets.chomp.to_i
 puts
 
-valid_input = true || false
-
-until valid_input
-  puts "Our cafeteria has AMAZING garlic bread! Would you like us to order some for you?"
+puts "Our cafeteria has AMAZING garlic bread! Would you like us to order some for you?"
     garlic_bread_preference = gets.chomp
-    
-    if garlic_bread_preference != "yes"
+ 
+    if garlic_bread_preference == "yes"
       garlic_bread_preference = true
       puts "Great! You'll enjoy it!"
       
-    elsif
-      garlic_bread_preference != "no"
+    else
+      garlic_bread_preference == "no"
       garlic_bread_preference = false
       puts "Bummer, you're really missing out!"
-    
-    else
-      puts "This is important! Please enter yes or no."
-    end
   end
-
 puts
 
 puts "We have amazing health insurance options. Would you like to enroll in the plan?"
     health_insurance_preference = gets.chomp
+    
+     if health_insurance_preference == "yes"
+      health_insurance_preference = true
+      puts "Awesome! I can even recommend a good doctor!"
+      
+    else
+      health_insurance_preference == "no"
+      health_insurance_preference = false
+      puts "Hmmm, that's odd... Everyone usually needs insurance."
+  end
 puts
 
 puts "Do you have any allergies? 
@@ -64,13 +66,14 @@ puts
 
 age_correct = false
 eat_garlic_bread = false
-yes_ health_insurance = false
+yes_health_insurance = false
 age_incorrect = true
 no_garlic_bread = true
 no_health_insurance = true
 allergies == sunshine = true
 
-age_correct && eat_garlic_bread && yes_health_insurance 
+#def 
+#puts age_correct && eat_garlic_bread && yes_health_insurance 
 
 
 
