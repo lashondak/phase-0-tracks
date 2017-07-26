@@ -1,82 +1,87 @@
-puts "Good day! Welcome to Vampire Enterprises of America!"
-puts
+puts "Good day! Welcome to Vampire Enterprises of America!\n"
 
-#Collecting user data
 puts "What is your name?"
-    employee_name = gets.chomp
-puts
+employee_name = gets.chomp
 
-#Determine # of employees to be processed for loop.
-
-puts "Hello #{employee_name}! How many new employees will we be processing today?" 
-    number_of_employees = gets.chomp.to_i 
-puts
-
-#Create while statement for repeat processing.
+puts "\nHello #{employee_name}! How many new employees will we be processing today?\n"
+number_of_employees = gets.chomp.to_i
 
 while number_of_employees > 0
 
-puts "How old are you?"
-    employee_age = gets.chomp.to_i
-puts
+  puts "\nHow old are you?\n"
+  employee_age = gets.chomp.to_i
 
-puts "What year were you born in?"
-     employee_birth_year = gets.chomp.to_i
-puts
+  puts "\nWhat year were you born in?\n"
+  employee_birth_year = gets.chomp.to_i
 
-puts "Our cafeteria has AMAZING garlic bread! Would you like us to order some for you?"
-     garlic_bread_preference = gets.chomp
- 
-  if garlic_bread_preference == "yes"
-       garlic_bread_preference = true
-       puts "Great! You'll enjoy it!"
-      
-  elsif
-       garlic_bread_preference == "no"
-       garlic_bread_preference = false
-       puts "Bummer, you're really missing out!"
-end
+  correct_age = 2017 - employee_age == employee_birth_year
 
-puts
+  puts "\nOur cafeteria has AMAZING garlic bread! Would you like us to order some for you (Yes or No)?\n"
+  garlic_bread_input = gets.chomp
 
-puts "We have amazing health insurance options. Would you like to enroll in the plan?"
-     health_insurance_preference = gets.chomp
-    
-  if health_insurance_preference == "yes"
+  if garlic_bread_input == "Yes"
+     garlic_bread_preference = true
+     puts "Great! You'll enjoy it!"
+  else
+     garlic_bread_preference = false
+     puts "Bummer, you're really missing out!"
+  end
+
+
+puts "\nWe have amazing health insurance options. Would you like to enroll in the plan?\n"
+     health_insurance_input = gets.chomp
+
+  if health_insurance_input == "Yes"
     health_insurance_preference = true
     puts "Awesome! I can even recommend a good doctor!"
-      
-  elsif health_insurance_preference == "no"
-    health_insurance_preference = false
-    puts "Hmmm, that's odd... Everyone usually needs insurance."
 
-end
-puts
+    else
+      health_insurance_preference = false
+      puts "\nHmmm, that's odd... Everyone usually needs insurance.\n"
+  end
+  
+  
+  result = "\nDevinitly not a vampire\n"
 
-puts "Do you have any allergies? 
-(If none, enter No. If yes, please list them one by one, pressing enter between entries. Type Done when you are finished."
-      allergies = gets.chomp
+  if correct_age && (garlic_bread_preference || health_insurance_preference)
+    result = "Probably not a vampire"
+  end
+
+  if !correct_age && (garlic_bread_preference || health_insurance_preference)
+    result = 'could be a vampire'
+  end
+
+
+
+
+
+  
+
+  puts "\nDo you have any allergies? (If Yes, type them one by one, pressing enter after each; if No, type Done)\n"
+  loop do
+    allergy = gets.chomp
     
-# #Need to add a loop that continues to collect allergies until the user is done.
-puts
+    if allergy == 'sunshine' || allergy == 'Sunshine'
+      result = "YOU ARE A VAMPIRE!"
+      break
+    end
+    
+    if allergy == 'done'
+      break
+    end
+  end
+
+  
 
 
+puts result
 number_of_employees = number_of_employees -= 1
-end
+end  #While loop
 
-# age_correct = false
-# eat_garlic_bread = false
-# yes_health_insurance = false
-# age_incorrect = true
-# no_garlic_bread = true
-# no_health_insurance = true
-# allergies == sunshine = true
+#if employee_name == "Dracula" || "dracula || "
 
-#def 
-#puts age_correct && eat_garlic_bread && yes_health_insurance 
-
-
-
+#def
+#puts age_correct && eat_garlic_bread && yes_health_insurance
 
 
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
