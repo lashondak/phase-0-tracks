@@ -33,61 +33,55 @@ puts "\nWe have amazing health insurance options. Would you like to enroll in th
 
   if health_insurance_input == "Yes"
     health_insurance_preference = true
-    puts "Awesome! I can even recommend a good doctor!"
+    puts "\nAwesome! I can even recommend a good doctor!\n"
 
     else
       health_insurance_preference = false
       puts "\nHmmm, that's odd... Everyone usually needs insurance.\n"
   end
+
+puts "\nDo you have any allergies? (If Yes, type them one by one, pressing enter after each; if No, type Done)\n"
+
+#Still having issues with the loop below
+loop do
+    allergy = gets.chomp
+      if allergy 
+        break
+      
+      if allergy == "sunshine" || allergy == "Sunshine"
+        result = "You are a Vampire!"
+        break
+      end  #End of sunshine allergy loop line 66
+      
+      if allergy == "done" ||
+        allergy == "Done"
+        break
+      end   #End of allergy done loop
+      
+      end
+
   
-  
-  result = "\nDevinitly not a vampire\n"
+end   #end of if loop line 45
+
+ # result = "\nDefinitly not a vampire\n"
 
   if correct_age && (garlic_bread_preference || health_insurance_preference)
-    result = "Probably not a vampire"
-  end
+    result = "Probably not a vampire." 
+  end   #End of probably not a vampire logic.
 
   if !correct_age && (garlic_bread_preference || health_insurance_preference)
-    result = 'could be a vampire'
-  end
+    result = "Probably a vampire."
+  end   #End of probably a vampire logic.
+
+  if !correct_age && !garlic_bread_preference && !health_insurance_preference
+    result = "Almost certainly a vampire."
+  end   #End of almost certainly logic
 
 
 
-
-
-  
-
-  puts "\nDo you have any allergies? (If Yes, type them one by one, pressing enter after each; if No, type Done)\n"
-  loop do
-    allergy = gets.chomp
-    
-    if allergy == 'sunshine' || allergy == 'Sunshine'
-      result = "YOU ARE A VAMPIRE!"
-      break
-    end
-    
-    if allergy == 'done'
-      break
-    end
-  end
-
-  
-
-
-puts result
+puts "\nVampire Screening Summary: #{result}\n"
 number_of_employees = number_of_employees -= 1
+
 end  #While loop
 
-#if employee_name == "Dracula" || "dracula || "
-
-#def
-#puts age_correct && eat_garlic_bread && yes_health_insurance
-
-
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
-
-#puts employee_name
-#puts employee_age
-#puts employee_birth_year
-#puts garlic_bread_preference
-#puts health_insurance_preference
