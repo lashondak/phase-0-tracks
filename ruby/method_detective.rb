@@ -31,7 +31,7 @@
 "Elementary,    my   dear        Watson!".squeeze(" ")
 # => "Elementary, my dear Watson!"
 
-# "z".<???>
+"z".bytes
 # => 122 
 # (What is the significance of the number 122 in relation to the character z?)
 #I can't find the method, but I know 122 is the ASCII code for the letter z. I have spent 20 minutes on this and I'll have to come back later...
